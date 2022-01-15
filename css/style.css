@@ -1,0 +1,414 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+/* style for nav */
+.nav-area {
+    font-family: 'Exo 2', sans-serif;
+
+}
+
+.nav-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    padding: 15px 20px;
+
+}
+
+#menu-bar,
+#nav-cart {
+    color: black;
+}
+
+#arrow-right {
+    color: white;
+    margin-left: 10px;
+}
+
+
+/* Style for Main */
+
+.hero-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 30px;
+    padding: 20px 30px;
+    margin-bottom: 10%;
+
+}
+
+.hero-img-area {
+    margin: 20px 0;
+}
+
+.hero-img {
+    width: 257px;
+    height: 257px;
+
+}
+
+.hero-text-area {
+
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.hero-heading {
+    font-size: 28px;
+    text-align: center;
+    padding: 5px 10px;
+
+
+}
+
+.hero-para {
+    font-size: 16px;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+
+.btn {
+    background-color: coral;
+    text-decoration: none;
+    padding: 5px 15px;
+    color: aliceblue;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 16px;
+    border-radius: 25px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.nav-item {
+    display: none;
+    text-decoration: none;
+    color: black;
+
+}
+
+/* Company Link */
+hr {
+    width: 100%;
+   
+ 
+
+}
+
+.sponsor-company {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+
+}
+
+.company {
+    padding: 10px 0px;
+    margin: 0;
+}
+
+.company>img {
+    width: 80%;
+
+
+}
+
+/* Products */
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 20px 25px;
+}
+
+.product-heading,
+.product-list {
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Exo 2', sans-serif;
+    padding: 20px 10px;
+}
+
+.product-list {
+    font-size: 24px;
+}
+
+.card {
+
+    margin: 20px 25px;
+    font-family: 'Josefin Sans', sans-serif;
+    box-shadow: 10px 10px 40px grey;
+    border-radius: 8px;
+
+
+}
+
+.product-detail {
+    margin: 10px 15px;
+    padding: 15px 20px;
+}
+
+.product-img {
+    width: 50%;
+
+}
+
+.product-img:hover {
+    transform: scale(1.2);
+    transition: ease;
+
+}
+
+.product-name {
+    font-size: 24px;
+    margin: 20 0px;
+    padding: 20px 0;
+
+}
+
+.price {
+    font-size: 20px;
+}
+
+.fas {
+    color: goldenrod;
+    padding-right: 5px;
+    margin: 10px 0;
+}
+
+.rating {
+    font-size: 14px;
+    padding: 10px 0;
+}
+
+.rating-int {
+    margin-left: 10px;
+}
+
+.product-para {
+    font-size: 14px;
+    text-align: justify;
+}
+
+.btn-2 {
+    color: coral;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 20px;
+    text-decoration: none;
+    padding: 10px 30px;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+#arrow-right-2 {
+    color: coral;
+    padding: 5px;
+}
+
+/* Insights */
+.insight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-family: 'Exo 2', sans-serif;
+
+
+}
+
+.insight-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 20px;
+    padding: 10px 30px;
+}
+
+.insight-text>h2 {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.color-text {
+    font-size: 16px;
+    text-align: center;
+    color: coral;
+    text-transform: capitalize;
+
+
+}
+
+.insight-para {
+    padding: 10px 0px;
+    text-align: justify;
+
+}
+
+#btn-insight {
+    border-radius: 0;
+    text-align: center;
+
+}
+
+.insight-img {
+    width: 100%;
+
+}
+
+#ing-img {
+    width: 70%;
+    margin-left: 50px;
+}
+
+/* Footer styles */
+footer {
+    background-color: rgb(168, 8, 8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    font-family: 'Exo 2', sans-serif;
+    margin-top: 20px;
+    padding: 20px 30px;
+
+}
+
+.social,
+.fab {
+    color: aliceblue;
+    margin: 10px;
+}
+
+/* Responsiveness */
+
+
+@media only screen and (min-width: 640px) {
+
+    .product-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .insight {
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width: 920px) {
+
+    #menu-bar,
+    #nav-cart {
+        display: none;
+        color: black;
+    }
+
+    .nav-area {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 30px;
+    }
+
+    .nav-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        text-decoration: none;
+        color: black;
+        padding: 10px;
+
+    }
+
+    .fontawesome {
+        color: black;
+    }
+
+
+    .hero-area {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 30px;
+            
+    }
+    .hero-text-area {
+        width: 50%;
+         font-family: 'Josefin Sans', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        
+        margin-right: 20px;
+    
+        }
+        
+   
+    .btn{
+        width: 35%;
+       
+    }
+    
+    .hero-img-area {
+        margin: 20px 0;
+        width: 50%;
+        margin-left: 20px;
+    }
+    
+    .hero-img {
+       width: 257px;
+       height: 257px;
+    
+    }
+    
+    
+    .hero-heading {
+        font-size: 28px;
+        text-align: justify;
+        padding: 5px 10px;
+    
+    
+    }
+    
+    .hero-para {
+        font-size: 16px;
+        padding: 10px 15px;
+        text-align: justify;
+    }
+    
+       
+    .product-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+    .insight {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
